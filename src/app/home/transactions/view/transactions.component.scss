@@ -1,0 +1,40 @@
+.container {
+    padding-top: 20px;
+
+    .title {
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 24px;
+    }
+
+    .current-date {
+        font-size: 16px;
+        font-weight: 400;
+        color: #3D3D3D;
+        padding-top:10px;
+    }
+
+    .row-transaction {
+        padding-top: 10px;
+    }
+
+    .image {
+        font-size: 20px;
+        font-weight: 400;
+        padding-left: 10px;
+    }
+
+    .date {
+        font-size: 15px;
+        color: #7A7A7A;
+        font-family: Roboto;
+        font-weight: 400;
+        padding-left: 10px;
+    }
+
+    .amount {
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 20px;
+    }
+}

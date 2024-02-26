@@ -1,0 +1,26 @@
+
+.card {
+    width: 288px;
+    height: 180px;
+    border-radius: 16px;
+    color: white;
+    position: relative;
+    margin-left:20px;
+
+    .card-body {
+      text-align: left;
+    }
+}
+
+.upper-text, .lower-text {
+    position: absolute;
+    width: 100%;
+  }
+  
+  .upper-text {
+    top: 20px;
+  }
+  
+  .lower-text {
+    bottom: 20px;
+  }

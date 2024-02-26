@@ -1,0 +1,23 @@
+<ngb-carousel *ngIf="cards.length > 0">
+    <ng-template ngbSlide *ngFor="let card of cards">
+        <div class="card" [style.background-color]="card.backgroundColor">
+            <div class="card-body" >
+                <h5 class="upper-text">{{ card.amount }}</h5>
+                <div class="row lower-text">
+                    <div class="col-8">
+                        <p class="card-text" [ngStyle]="{'margin-top': card.type == 'MASTERCARD' ? '25px' : '0px'}">
+                            •‎•‎•‎• {{ card.lastDigits }}
+                        </p>
+                    </div>
+                    <div class="col-3" *ngIf="card.type == 'MASTERCARD'">
+                        <img src="/assets/mastercard.png" width="90px" height="60px" />
+                    </div>
+                    <div class="col-3" *ngIf="card.type == 'VISA'">
+                        <img src="/assets/visacard.png" width="70px" height="35px" />
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+  </ngb-carousel>
